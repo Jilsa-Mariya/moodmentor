@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #login-section {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  #options-section {
+    text-align: center;
+  }
+  .option {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  .option-image {
+    border-radius: 50%;
+    max-width: 100px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .option p {
+    margin-top: 10px;
+  }
+  #tracking-section {
+    text-align: center;
+  }
+  
+  #tracking-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  #tracking-form label,
+  #tracking-form select,
+  #tracking-form textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #tracking-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  #tips-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  #notes-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  #tips-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  #journaling-section {
+    text-align: center;
+  }
+  
+  #journaling-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  #journaling-form label,
+  #journaling-form textarea {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #journaling-form button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }

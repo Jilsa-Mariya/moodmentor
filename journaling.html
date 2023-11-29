@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Journaling</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header>
+    <h1>Journaling Page</h1>
+  </header>
+
+  <main>
+    <section id="journaling-section">
+      <h2>Write in Your Journal</h2>
+      <form id="journaling-form">
+        <label for="journal-date">Date:</label>
+        <input type="date" id="journal-date" name="journal-date" required>
+
+        <label for="journal-entry">Journal Entry:</label>
+        <textarea id="journal-entry" name="journal-entry" rows="4"></textarea>
+
+        <button type="submit">Save Entry</button>
+        <button onclick="displaySavedData()">History</button>
+        <div id="display-container"></div>
+      </form>
+    </section>
+    <script src="index.js">
+      // Function to display saved data
+      function displaySavedData() {
+          const displayContainer = document.getElementById("display-container");
+
+          // Get tracking entries from the tracking module
+          const trackingEntries = trackingModule.getTrackingEntries();
+
+          displayContainer.innerHTML = "<h2>Saved Tracking Entries</h2>";
+
+          trackingEntries.forEach((entry, index) => {
+            displayContainer.innerHTML += `<p>${index + 1}. Date: ${entry.date}, Mood: ${entry.mood}</p>`;
+          });
+
+          // Get journal entries from the journaling module
+          const journalEntries = journalingModule.getJournalEntries();
+
+          displayContainer.innerHTML += "<h2>Saved Journal Entries</h2>";
+
+          journalEntries.forEach((entry, index) => {
+            displayContainer.innerHTML += `<p>${index + 1}. Date: ${entry.date}, Entry: ${entry.entry}</p>`;
+          });
+        }
+    </script>
+  </main>
+</body>
+</html>

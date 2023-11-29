@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: powderblue;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: wheat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+select {
+    display: block;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#tips {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+h2 {
+    color: #4caf50;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #007bff;
+}
+div {
+    margin-bottom: 10px;
+}
+textarea {
+    resize: vertical;
+    height: 120px;
+    width: 320px;
+}
+
